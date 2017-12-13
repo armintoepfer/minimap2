@@ -83,6 +83,7 @@ mm2_cpp_sources = files([
   'align.c',
   'bseq.c',
   'chain.c',
+  'esterr.c',
   'format.c',
   'getopt.c',
   'hit.c',
