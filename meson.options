@@ -1,0 +1,17 @@
+########
+# simd #
+########
+
+option('sse41',
+    description: 'Enable SSE4 codepaths',
+    type: 'boolean',
+    value: true)
+
+#########
+# tests #
+#########
+
+option('tests',
+    description: 'Enable dependencies required for testing',
+    type: 'boolean',
+    value: true)

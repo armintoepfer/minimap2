@@ -1,8 +1,13 @@
-.cproject
-.project
-.*.swp
-*.a
-*.o
-*.dSYM
-minimap2
-mappy.c
+*.t.err
+.DS_Store
+/.cache/
+/.claude/
+/.mypy_cache/
+/.venv/
+/.vscode/
+/build*
+__pycache__
+
+# Meson WrapDB stuff
+/subprojects/*
+!/subprojects/*.wrap
