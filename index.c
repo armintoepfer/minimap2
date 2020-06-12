@@ -16,6 +16,10 @@
 #include "kvec.h"
 #include "khash.h"
 
+// disable all the warnings in this file
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-result"
+
 #define idx_hash(a) ((a)>>1)
 #define idx_eq(a, b) ((a)>>1 == (b)>>1)
 KHASH_INIT(idx, uint64_t, uint64_t, 1, idx_hash, idx_eq)
@@ -1072,3 +1076,4 @@ int64_t mm_idx_spsc_get(const mm_idx_t *db, int32_t cid, int64_t st, int64_t en,
 	}
 	return en - st;
 }
+#pragma GCC diagnostic pop
